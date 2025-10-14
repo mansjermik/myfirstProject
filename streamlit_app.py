@@ -90,7 +90,7 @@ with tab2:
             """)
 
 
-        if st.button("show data"):
+    if st.button("show data table"):
             st.write(df.head(1))
 
 
