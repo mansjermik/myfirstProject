@@ -1,17 +1,10 @@
-# import streamlit as st
-# import pandas as pd
-# import matplotlib.pyplot as plt
-# from sklearn.model_selection import train_test_split
-# import xgboost
-# from xgboost import XGBClassifier
-# from sklearn.metrics import accuracy_score
-
-# st.title("👽 Machine Learning Project App")
-# st.info("Give the input to find out the result...")
-# st.sidebar.title("Inputs")
-
 import streamlit as st
 import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+import xgboost
+from xgboost import XGBClassifier
+from sklearn.metrics import accuracy_score
 import joblib
 
 # ========================
