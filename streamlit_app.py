@@ -99,8 +99,9 @@ with tab2:
 
 # ======== Making Prediction ===========
 with tab1:
-    pred = model.predict(df).squeeze() 
-    if pred == 1:
-        st.success("Survived")
-    else:
-        st.warning("Didn't Survive")
+    if st.button("Predict"):
+        pred = model.predict(df).squeeze() 
+        if pred == 1:
+            st.success("Survived")
+        else:
+            st.warning("Didn't Survive")
